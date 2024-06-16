@@ -6,10 +6,10 @@ interface UpdateProductRequest extends FastifyRequest {
         id: string;
     };
     Body: {
-        name?: string;
-        description?: string;
-        price?: number;
-        color?: string;
+        name?: string; 
+        description?: string; 
+        price?: number; 
+        color?: string; 
         stock?: number;
     };
 }
@@ -20,9 +20,9 @@ class UpdateProductsControllers {
         const {id} = request.query as {id: string}
         const data = request.body;
 
-        const products = await productsService.execute({id, data})
+        //const products = await productsService.execute({id, data})
 
-        reply.send(products)
+        //reply.send(products)
     }
 }
 
