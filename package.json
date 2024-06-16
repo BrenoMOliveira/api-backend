@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "tsx watch src/server.ts",
-    "dev": "ts-node-dev src/server.ts",
-    "vercel-build": "npx prisma generate && npx prisma migrate deploy"  
+    "dev": "tsx watch src/server.ts"
   },
   "author": "",
   "license": "ISC",
